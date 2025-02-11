@@ -7,9 +7,9 @@ local w = library:CreateWindow('Main')
  local t = w:Toggle('Yellow Orb', {flag = "M"})
 spawn( 
     function()
-        while wait() do
+        while wait(0.0000001) do
             if w.flags.M then
-                game:GetService("ReplicatedStorage").cPetShopRemote:InvokeServer(game:GetService("ReplicatedStorage").cPetShopFolder["Divine Pegasus"])
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/RILZNOTGOOD/Nekkkk/refs/heads/main/Y"))()
             end
         end
     end
@@ -18,9 +18,9 @@ spawn(
 local t = w:Toggle('Red Orb', {flag = "S"})
 spawn( 
     function()
-        while wait() do
+        while wait(0.0000000001) do
             if w.flags.S then
-                game:GetService("ReplicatedStorage").cPetShopRemote:InvokeServer(game:GetService("ReplicatedStorage").cPetShopFolder["Divine Pegasus"])
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/RILZNOTGOOD/Nekkkk/refs/heads/main/R"))()
             end
         end
     end
@@ -29,9 +29,9 @@ spawn(
 local t = w:Toggle('Ethereal', {flag = "P"})
 spawn( 
     function()
-        while wait() do
+        while wait(0.00000001) do
             if w.flags.P then
-                game:GetService("ReplicatedStorage").cPetShopRemote:InvokeServer(game:GetService("ReplicatedStorage").cPetShopFolder["Divine Pegasus"])
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/RILZNOTGOOD/Nekkkk/refs/heads/main/E"))()
             end
         end
     end
@@ -40,9 +40,10 @@ spawn(
 local t = w:Toggle('Rebirth', {flag = "C"})
 spawn( 
     function()
-        while wait() do
+        while wait(0.00000000001) do
             if w.flags.C then
-                game:GetService("ReplicatedStorage").cPetShopRemote:InvokeServer(game:GetService("ReplicatedStorage").cPetShopFolder["Divine Pegasus"])
+                 game:GetService("ReplicatedStorage").rEvents.rebirthEvent:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").rEvents.rebirthEvent:FireServer(unpack(args))
             end
         end
     end
